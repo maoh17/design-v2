@@ -1,25 +1,29 @@
 ---
-title: "Min fina titel"
+title: "Magnus me-sida"
+
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
+
 ---
+
 Min me-sida i kursen design
 =========================
 
+[FIGURE src="image/moskkugaisi.jpg?w=500" class="right" caption="Jag på toppen av fjället Moskkugaisi"]
+
+Jag är civilingenjör, fjällvandrare, skidåkare och entrepenör som 2017-2018 studerade kurspaketet [Webbprogrammering och Databaser, 30hp](https://dbwebb.se/utbildning/webbprogrammering-och-databaser-30hp) på Blekinge Tekniska Högskola.
+
+Jag kämpade mig igenom och klarade alla kurser utom kursen [Teknisk webbdesign och användbarhet](https://dbwebb.se/kurser/design-v2), som jag var tvungen att hoppa av pga tidsbrist då jag flyttade hösten 2017. Jag såg i alla fall till att klara 3-veckors uppropet så att jag kunde fortsätta på vårens kurser.
+
+Först hade jag inte tänkt att registrera om mig på kursen design, men nu i höst så tänkte jag om av lite olika anledningar. Det skulle förstås vara kul att slutföra hela kurspaketet nu när det bara fattas en godkänd kurs. Men det viktigaste skälet är faktiskt att jag tycker jag saknar bitar rent kunskapsmässigt inom webbdesign och att gå en BTH-kurs är nog det bästa sättet att lära sig grunderna.
+
+Eftersom kursen nu går i en ny version så tar jag nya tag och börjar om från början.
+
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
-
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
-
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
-
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
-
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael

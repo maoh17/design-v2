@@ -5,6 +5,8 @@
  * to style up the website so it is useable.
  */
 
+ @import url(http://fonts.googleapis.com/css?family=Raleway);
+
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {
     display: none;
@@ -13,4 +15,30 @@
 /* Hide responsive/mobile menu, leave this to kmom02 */
 .rm-navbar-max {
     display: none;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+.wrap-all {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f6f6f6;      /* Ljusgrå */
+    /* font-family: 'Raleway'; */
+}
+
+.site-logo {
+    display: none;
+}
+
+.footer-column {
+    width: 33%;
+    float:left;
 }

@@ -1,3 +1,3 @@
 #### Redovisa på GitHub
 
-Skriv något kort om ditt redovisa-repo och länka till [repot för me/redovisa på GitHub](XXX).
+Källkoden för min me-sida finns på GitHub: [maoh17/design-v2](https://github.com/maoh17/design-v2).
