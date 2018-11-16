@@ -1,3 +1,3 @@
-#### Footer col 2
+#### maoh17
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Jag (maoh17) studerar kurspaketet  [Webbprogrammering och Databaser, 30hp](https://dbwebb.se/utbildning/webbprogrammering-och-databaser-30hp) på BTH.

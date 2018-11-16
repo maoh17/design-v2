@@ -1,3 +1,4 @@
-#### Footer col 3
+#### Länkar
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+* GitHub: [maoh17/design-v2](https://github.com/maoh17/design-v2)
+* [Markdown basics](https://daringfireball.net/projects/markdown/basics)

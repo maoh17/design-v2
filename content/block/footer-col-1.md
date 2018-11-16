@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Design
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Kursen [Teknisk webbdesign och användbarhet](https://dbwebb.se/kurser/design-v2) (design) är en kurs som lär ut olika tekniker som underlättar webbdesign och användbarhet då man skapar en webbplats.

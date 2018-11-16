@@ -1,7 +1,3 @@
-<div style="border: 2px solid grey; margin: 40px; padding: 10px; background-color: lightgrey; overflow: auto;"  markdown=1>
+[FIGURE src=image/jag_100x100.jpg]
 
-<img src="img/jag_100x100.jpg" style="float:right;">
-
-[maoh17](mailto:maoh17@student.bth.se) studerar kursen *Teknisk webbdesign och användbarhet* vid Blekinge Tekniska Högskola.
-
-</div>
+maoh17 studerar kursen *Teknisk webbdesign och användbarhet* vid Blekinge Tekniska Högskola.
