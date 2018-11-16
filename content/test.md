@@ -38,6 +38,6 @@ Ett exempel på en [länk](https://dbwebb.se/kurser/design-v2).
 
 Bild:
 
-![alt text](/dbwebb/design/me/redovisa/htdocs/image/kalleanka.jpg "Titel")
+![Kalle Anka](http://www.student.bth.se/~maoh17/dbwebb-kurser/design/me/redovisa/htdocs/img/kalleanka.jpg "Titel")
 
 `Kod`

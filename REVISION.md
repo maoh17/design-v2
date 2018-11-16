@@ -1,10 +1,16 @@
 Revision history
 ===================
 
+v1.0.3 (2018-11-16)
+-------------------
+
+* Corrected image in test page.
+
+
 v1.0.2 (2018-11-16)
 -------------------
 
-* Added CSS styling
+* Added CSS styling.
 
 
 v1.0.1 (2018-11-14)
