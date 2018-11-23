@@ -1,0 +1,27 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+@bgColorHtml: black;
+@bgColorBody: white; //default färg
+@colorBody: #333;
+@fontFamilyBody: 'Raleway';
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+img {
+    max-width: 100%;  // Gör alla bilder responsiva
+}
