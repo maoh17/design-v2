@@ -16,7 +16,7 @@ views:
 Min me-sida i kursen design
 =========================
 
-[FIGURE src="image/moskkugaisi.jpg?w=500" class="right" caption="Jag på toppen av fjället Moskkugaisi"]
+[FIGURE src="image/moskkugaisi.jpg?h=336" class="right"]
 
 Jag är civilingenjör, fjällvandrare, skidåkare och entrepenör som 2017-2018 studerade kurspaketet [Webbprogrammering och Databaser, 30hp](https://dbwebb.se/utbildning/webbprogrammering-och-databaser-30hp) på Blekinge Tekniska Högskola.
 

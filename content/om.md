@@ -34,6 +34,6 @@ Denna webbplats har jag byggt med ramverket Anax som en del i kursen [Teknisk we
 
 Webbplatsen är skapad av maoh17.
 
-[FIGURE src=image/p111.jpg?w=400 caption="Landmannalaugar, Island."]
+[FIGURE src=image/p111.jpg?h=288]
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.

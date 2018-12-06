@@ -2,10 +2,16 @@ Revision history
 ===================
 
 
+v3.0.0 (2018-12-07)
+-------------------
+
+* Kmom03: Build a LESS theme using vertical and horizontal grid.
+
+
 v2.0.0 (2018-11-23)
 -------------------
 
-* Kmom02: Build a LESS theme
+* Kmom02: Build a LESS theme.
 
 
 v1.0.3 (2018-11-16)
