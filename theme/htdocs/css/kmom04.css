@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
   * Import mixins.
@@ -4396,6 +4396,24 @@ template {
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif SC'), local('NotoSerifSC-Regular'), url(http://fonts.gstatic.com/s/notoserifsc/v1/H4chBXePl9DZ0Xe7gG9cyOj7kqGWbQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Gamja Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gamja Flower Regular'), local('GamjaFlower-Regular'), url(http://fonts.gstatic.com/s/gamjaflower/v5/6NUR8FiKJg-Pa0rM6uN40Z4UzvVB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
 html {
   overflow-y: scroll;
   background-color: black;
@@ -4403,12 +4421,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: lightgrey;
+  color: #101218;
+  background-color: #fdfdfd;
   font: 16px/1.5 'Open Sans', sans-serif;
 }
 img {
   max-width: 100%;
+}
+a:link {
+  color: #101218;
+}
+a:visited {
+  color: #101218;
 }
 h1,
 h2,
@@ -4786,7 +4810,7 @@ hr::after {
   * Header layout
   */
 .outer-wrap-header {
-  background-color: #aba;
+  background-color: #071022;
 }
 .region-header-col-1 {
   display: inline;
@@ -4809,14 +4833,14 @@ hr::after {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  color: #333;
+  color: silver;
 }
 .site-logo-text {
   font-size: 1.6em;
 }
 .site-logo-text a {
   text-decoration: none;
-  color: dimgrey;
+  color: #8db4b4;
 }
 .site-logo-text a:hover {
   text-decoration: underline;
@@ -4826,7 +4850,7 @@ hr::after {
 }
 .my-navbar li {
   display: inline;
-  color: #333;
+  color: silver;
 }
 .my-navbar li a {
   text-decoration: none;
@@ -4864,7 +4888,7 @@ hr::after {
   content: "";
 }
 .breadcrumb-list ul li a {
-  color: dimgrey;
+  color: #101218;
   text-decoration: none;
 }
 .breadcrumb-list ul li a:hover {
@@ -4973,7 +4997,7 @@ hr::after {
 }
 .next a,
 .previous a {
-  color: dimgrey;
+  color: #101218;
   text-decoration: none;
 }
 .next a:hover,
@@ -5018,7 +5042,7 @@ figcaption p {
   clear: both;
 }
 .outer-wrap-footer {
-  background-image: linear-gradient(dimgrey, grey);
+  background-image: linear-gradient(#071022, #071022);
   color: lightgrey;
   font-size: 0.8em;
 }
@@ -5356,3 +5380,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * My own settings, not currently in their own module.
  */
+/**
+  * My theme settings.
+  */

@@ -5,10 +5,15 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif+SC);
+@import url(http://fonts.googleapis.com/css?family=Gamja+Flower);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
 @bgColorHtml: black;
-@bgColorBody: white; //default färg
-@colorBody: #333;
+@bgColorBody: white;    //default color not used
+@textColor: #333;       //default color
+@linkColor: blue;       //default color
+@visitedColor: purple;  //default color
 
 //@fontFamilyBody: 'Raleway';
 
@@ -20,7 +25,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    color: @colorBody;
+    color: @textColor;
     background-color: @bgColorBody;
     //font: 100.01%/1 @fontFamilyBody;
 
@@ -32,6 +37,13 @@ img {
     max-width: 100%;  // Gör alla bilder responsiva
 }
 
+a:link {
+    color: @linkColor;
+}
+
+a:visited {
+    color: @visitedColor;
+}
 
 // Activate grid and affect all typographic elements
 #desinax-hgrid.activateDefaultTypography();

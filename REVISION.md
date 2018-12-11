@@ -1,6 +1,11 @@
 Revision history
 ===================
 
+v4.0.0 (2018-12-11)
+-------------------
+
+* Kmom04: Build three themes; minimalistic, colorful and dark.
+
 
 v3.0.0 (2018-12-07)
 -------------------

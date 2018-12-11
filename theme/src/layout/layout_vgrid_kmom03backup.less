@@ -6,12 +6,7 @@
 /**
  * Variables
  */
-@bgColorHeader: #aba;  //default color
-@listColor: dimgrey;  //default color
-@logotextColor: dimgrey;  //default color
-@navbarColor: #333;  //default color
-@footerColorTop: dimgrey;  //default color
-@footerColorBottom: grey;  //default color
+
 
 /**
  * General layout
@@ -32,11 +27,11 @@
  .wrap-all {
 //     max-width: 1200px;
 //     margin: 0 auto;
-//     background-color: @bgColorWrap;      // Olika färg för olika kmom
+     background-color: @bgColorWrap;      // Olika färg för olika kmom
  }
 
  .outer-wrap-main {
-//     background-color: #F0E2DA; //#f6f6f6;      // Ljusgrå
+     background-color: #F0E2DA; //#f6f6f6;      // Ljusgrå
 //     width: 100%;
 //     box-sizing: border-box;
  }
@@ -72,7 +67,7 @@
 
  .outer-wrap-header {
 //     #desinax-vgrid.grid(100%);
-       background-color: @bgColorHeader; //#aba;
+     background-color: #aba;
 //     .clearfix();
  }
 
@@ -96,7 +91,6 @@
 
  .region-header-col-3 {
      #desinax-vgrid.column(5);
-     color: @navbarColor;
 //     width: 20%;
 //     float: left;
  }
@@ -107,8 +101,7 @@
 
  .site-logo-text a {
      text-decoration: none;
-     color: @logotextColor;
-     //color: dimgrey;
+     color: dimgrey;
  }
 
  .site-logo-text a:hover {
@@ -121,7 +114,6 @@
 
  .my-navbar li {
      display: inline;
-     color: @navbarColor;
 //     box-sizing: border-box;
      // padding: 0 1em;
  }
@@ -134,9 +126,6 @@
      text-decoration: underline;
  }
 
- .region-flash {
-     #desinax-vgrid.column(@columns); // 24 columns
- }
 
  .region-breadcrumb {
      #desinax-vgrid.column(@columns);
@@ -171,7 +160,7 @@
  }
 
  .breadcrumb-list ul li a {
-     color: @listColor;
+     color: dimgrey;
      text-decoration: none;
  }
 
@@ -265,7 +254,7 @@
 
  .next a,
  .previous a {
-     color: @listColor;
+     color: dimgrey;
      text-decoration: none;
  }
 
@@ -309,8 +298,6 @@
      padding: 1em;
      border: 2px solid grey;
      background-color: lightgrey;
-     color: #333;
-     font-size: 0.8em;
  }
 
  .byline img {
@@ -328,7 +315,7 @@
  }
 
  .outer-wrap-footer {
-     background-image: linear-gradient(@footerColorTop, @footerColorBottom);
+     background-image: linear-gradient(dimgrey, grey);
      color: lightgrey;
      font-size: 0.8em;
 //     box-sizing: border-box;

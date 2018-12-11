@@ -1,7 +1,15 @@
 /*!
- * Stylesheet for design kmom03.
+ * Dark stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
+ */
+/**
+ * Import kmom04.less as base theme.
+ */
+/*!
+ * Stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /**
   * Import mixins.
@@ -4396,6 +4404,24 @@ template {
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif SC'), local('NotoSerifSC-Regular'), url(http://fonts.gstatic.com/s/notoserifsc/v1/H4chBXePl9DZ0Xe7gG9cyOj7kqGWbQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Gamja Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gamja Flower Regular'), local('GamjaFlower-Regular'), url(http://fonts.gstatic.com/s/gamjaflower/v5/6NUR8FiKJg-Pa0rM6uN40Z4UzvVB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
 html {
   overflow-y: scroll;
   background-color: black;
@@ -4403,12 +4429,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: lightgrey;
-  font: 16px/1.5 'Open Sans', sans-serif;
+  color: #dddddd;
+  background-color: #303030;
+  font: 16px/1.5 'Noto Serif SC', serif;
 }
 img {
   max-width: 100%;
+}
+a:link {
+  color: #ff5f00;
+}
+a:visited {
+  color: #ff5f00;
 }
 h1,
 h2,
@@ -4416,7 +4448,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -4786,7 +4818,7 @@ hr::after {
   * Header layout
   */
 .outer-wrap-header {
-  background-color: #aba;
+  background-color: #111111;
 }
 .region-header-col-1 {
   display: inline;
@@ -4809,14 +4841,14 @@ hr::after {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  color: #333;
+  color: white;
 }
 .site-logo-text {
   font-size: 1.6em;
 }
 .site-logo-text a {
   text-decoration: none;
-  color: dimgrey;
+  color: #ff5f00;
 }
 .site-logo-text a:hover {
   text-decoration: underline;
@@ -4826,7 +4858,7 @@ hr::after {
 }
 .my-navbar li {
   display: inline;
-  color: #333;
+  color: white;
 }
 .my-navbar li a {
   text-decoration: none;
@@ -4864,7 +4896,7 @@ hr::after {
   content: "";
 }
 .breadcrumb-list ul li a {
-  color: dimgrey;
+  color: #ff5f00;
   text-decoration: none;
 }
 .breadcrumb-list ul li a:hover {
@@ -4973,7 +5005,7 @@ hr::after {
 }
 .next a,
 .previous a {
-  color: dimgrey;
+  color: #ff5f00;
   text-decoration: none;
 }
 .next a:hover,
@@ -5355,4 +5387,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 /**
  * My own settings, not currently in their own module.
+ */
+/**
+  * My theme settings.
+  */
+/**
+ * My theme settings.
  */
