@@ -1,0 +1,49 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif+SC);
+@import url(http://fonts.googleapis.com/css?family=Gamja+Flower);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+@bgColorHtml: black;
+@bgColorBody: white;    //default color not used
+@textColor: #333;       //default color
+@linkColor: blue;       //default color
+@visitedColor: purple;  //default color
+
+//@fontFamilyBody: 'Raleway';
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @textColor;
+    background-color: @bgColorBody;
+    //font: 100.01%/1 @fontFamilyBody;
+
+    // Activate the grid base font
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+img {
+    max-width: 100%;  // Gör alla bilder responsiva
+}
+
+a:link {
+    color: @linkColor;
+}
+
+a:visited {
+    color: @visitedColor;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();

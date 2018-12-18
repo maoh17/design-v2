@@ -1,6 +1,12 @@
 Revision history
 ===================
 
+v5.0.0 (2018-12-18)
+-------------------
+
+* Kmom05: Build a blog with support for images.
+
+
 v4.0.0 (2018-12-11)
 -------------------
 
