@@ -4846,24 +4846,6 @@ figure.codepen,
 figure.figure-codepen {
   width: 100%;
 }
-/*@maxContentWidth: 960px;
-
-&.left,
-&.right {
-    @media screen {
-        @media (max-width: round(@maxContentWidth * 2 / 3)) {
-            &.w33 {
-                margin-left: 0;
-                margin-right: 0;
-                float: none;
-                img {
-                    width: @maxContentWidth * 2 / 3;
-                }
-            }
-        }
-    }
-}
-*/
 /**
  * Import the vertical grid.
  */

@@ -1,6 +1,12 @@
 Revision history
 ===================
 
+v6.0.0 (2018-12-20)
+-------------------
+
+* Kmom06: Create themes with design elements and principles.
+
+
 v5.0.0 (2018-12-18)
 -------------------
 

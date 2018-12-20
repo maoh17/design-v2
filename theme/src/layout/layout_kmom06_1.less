@@ -1,0 +1,361 @@
+/**
+ * Layout using vgrid.
+ */
+
+
+/**
+ * Variables
+ */
+@bgColorHeader: #aba;  //default color
+@listColor: dimgrey;  //default color
+@logotextColor: dimgrey;  //default color
+@navbarColor: #333;  //default color
+@footerColorTop: dimgrey;  //default color
+@footerColorBottom: grey;  //default color
+
+/**
+ * General layout
+ */
+
+ .row {
+     #desinax-vgrid.row();
+     //background-color: #0f0;
+     margin-bottom: 12px;
+ }
+
+ .row::after {
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+ .wrap-all {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     background-color: @bgColorWrap;      // Olika färg för olika kmom
+ }
+
+ .outer-wrap-main {
+//     background-color: #F0E2DA; //#f6f6f6;      // Ljusgrå
+//     width: 100%;
+//     box-sizing: border-box;
+ }
+
+ .inner-wrap {
+     #desinax-vgrid.grid(1100px);
+ }
+
+ .inner-wrap-header {
+     #desinax-vgrid.grid(100%);
+ }
+
+ .vgrid .inner-wrap {
+     @gridImage: "../img/grid_24x30x10-nomargin.png";
+     //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+     #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+     &.inner-wrap-header,
+     &.inner-wrap-footer {
+         #desinax-vgrid.showGrid(@gridImage);
+     }
+ }
+
+// .inner-wrap-header,
+// .inner-wrap-footer {
+//     #desinax-vgrid.grid(100%);
+// }
+
+
+ /**
+  * Header layout
+  */
+
+ .outer-wrap-header {
+//     #desinax-vgrid.grid(100%);
+       background-color: @bgColorHeader; //#aba;
+//     .clearfix();
+ }
+
+ .inner-wrap-header {
+//     max-width: 100%;
+ }
+
+ .region-header-col-1 {
+     #desinax-vgrid.column(5);
+//     width: 20%;
+//     float: left;
+ }
+
+ .region-header-col-2 {
+     #desinax-vgrid.column(14);
+//     width: 60%;
+//     float: left;
+//     text-align: center;
+     font-size: 1.2em;
+ }
+
+ .region-header-col-3 {
+     #desinax-vgrid.column(5);
+     color: @navbarColor;
+//     width: 20%;
+//     float: left;
+ }
+
+ .site-logo-text {
+     font-size: 1.6em;
+ }
+
+ .site-logo-text a {
+     text-decoration: none;
+     color: @logotextColor;
+     //color: dimgrey;
+ }
+
+ .site-logo-text a:hover {
+     text-decoration: underline;
+ }
+
+ .site-logo {
+     display: none;
+ }
+
+ .my-navbar li {
+     display: inline;
+     color: @navbarColor;
+//     box-sizing: border-box;
+     // padding: 0 1em;
+ }
+
+ .my-navbar li a {
+     text-decoration: none;
+ }
+
+ .my-navbar li a:hover {
+     text-decoration: underline;
+ }
+
+ .region-flash {
+     #desinax-vgrid.column(@columns); // 24 columns
+ }
+
+ .region-breadcrumb {
+     #desinax-vgrid.column(@columns);
+ }
+
+ .region-breadcrumb li {
+     display: inline;
+ }
+
+ .inner-wrap-breadcrumb {
+//     margin: 0 auto;
+//     width: 1080px;
+ }
+
+ .breadcrumb-list ul {
+     list-style-type: none;
+//     padding: 0;
+ }
+
+ .breadcrumb-list ul li {
+     display: inline;
+ }
+
+ .breadcrumb-list ul li::after {
+     content: " | ";
+//     padding: 0 0.5em;
+ }
+
+ .breadcrumb-list ul li:last-child::after {
+     content: "";
+//     padding: 0;
+ }
+
+ .breadcrumb-list ul li a {
+     color: @listColor;
+     text-decoration: none;
+ }
+
+ .breadcrumb-list ul li a:hover {
+     text-decoration: underline;
+ }
+
+
+ /**
+  * Main and sidebar layout
+  */
+
+// .inner-wrap-main {
+//     overflow: auto;
+// }
+
+ .region-main {
+    #desinax-vgrid.column(@columns * 3 / 4); // 18 columns
+    #desinax-vgrid.push(2);
+
+     &.has-sidebar {
+         #desinax-vgrid.push(0);
+     }
+
+     &.has-sidebar-right {
+         #desinax-vgrid.column(@columns * 3 / 4); // 18 columns
+     }
+
+     // Three columns
+     &.has-sidebar-left.has-sidebar-right {
+         #desinax-vgrid.column(@columns * 2 / 4 + 2); // 14 columns
+     }
+
+ }
+
+ // Two columns
+ .region-sidebar-left,
+ .region-sidebar-rigth {
+     #desinax-vgrid.column(@columns * 1 / 4); // 6 columns
+ }
+
+ .region-sidebar-rigth {
+     //#desinax-vgrid.push(1);
+ }
+
+ // Three columns
+ .region-sidebar-left.has-sidebar-right,
+ .region-sidebar-rigth.has-sidebar-left {
+     //#desinax-vgrid.column(6);
+     #desinax-vgrid.column(@columns * 1 / 4 - 1); // 6 columns
+//     width: 25%;
+ }
+
+
+
+/**
+ * Responsible 1, 2, 3
+ */
+ @media screen and (max-width: 1000px) {
+     .region-main {
+        #desinax-vgrid.column(@columns); // 24 columns
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns); // 24 columns
+        }
+    }
+
+    .region-sidebar-rigth {
+        #desinax-vgrid.column(@columns); // 24 columns
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns); // 24 columns
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-rigth.has-sidebar-left {
+        #desinax-vgrid.column(@columns); // 24 columns
+    }
+ }
+
+ @media screen and (max-width: 850px) {
+     .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns); // 24 columns
+    }
+
+    .region-sidebar-rigth {
+        #desinax-vgrid.column(@columns); // 24 columns
+    }
+ }
+
+
+ .next a,
+ .previous a {
+     color: @listColor;
+     text-decoration: none;
+ }
+
+ .next a:hover,
+ .previous a:hover {
+     text-decoration: underline;
+ }
+
+ .next {
+//     float: right;
+ }
+
+
+ /**
+  * Footer layout
+  */
+
+ .footer-column {
+     #desinax-vgrid.column(@columns / 3);
+//     width: 33%;
+//     float:left;
+ }
+
+ ul {
+     list-style-type: none;
+//     padding-left: 0;
+ }
+
+ .figure {
+//     margin: 40px;
+ }
+
+ figcaption p {
+     margin-top: 6px;
+     color: dimgrey;
+     font-style: italic;
+ }
+
+ .byline {
+     box-sizing: border-box;
+     padding: 1em;
+     border: 2px solid grey;
+     background-color: lightgrey;
+     color: #333;
+     font-size: 0.8em;
+ }
+
+ .byline img {
+     float: right;
+ }
+
+// .byline:hover {
+//       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+// }
+
+ .byline::after {
+     content: "";
+     display: block;
+     clear:both;
+ }
+
+ .outer-wrap-footer {
+     background-image: linear-gradient(@footerColorTop, @footerColorBottom);
+     color: lightgrey;
+     font-size: 0.8em;
+//     box-sizing: border-box;
+//     padding: 2em;
+ }
+
+ .inner-wrap-footer {
+//     margin: 0 auto;
+//     width: 1080px;
+ }
+
+ .footer-column {
+//     float: left;
+//     width: 30%;
+//     margin-right: 3%;
+ }
+
+ .footer-column p a {
+     color: white;
+ }
+
+ .footer-column li a {
+     color: white;
+ }
+
+ .site-footer p {
+     #desinax-vgrid.column(@columns);
+//     text-align: center;
+ }

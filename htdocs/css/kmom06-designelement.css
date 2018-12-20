@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom05.
+ * Stylesheet for design kmom06.
  *
- * This stylesheet is for the design course and kmom05 where we use LESS.
+ * This stylesheet is for the design course and kmom06 where we use LESS.
  */
 /**
   * Import mixins.
@@ -4423,10 +4423,14 @@ body {
   padding: 0;
   color: #101218;
   background-color: #fdfdfd;
+  background-image: linear-gradient(to right, #555555, #ffffff, #555555);
   font: 16px/1.5 'Open Sans', sans-serif;
 }
 img {
   max-width: 100%;
+}
+img:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 a:link {
   color: #101218;
@@ -4440,7 +4444,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5160,9 +5164,6 @@ figcaption p {
 }
 .byline img {
   float: right;
-}
-.byline:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .byline::after {
   content: "";
